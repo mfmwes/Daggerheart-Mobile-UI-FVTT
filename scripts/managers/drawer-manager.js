@@ -22,6 +22,21 @@ class DrawerManager {
 
         this.createButton();
         this.createOverlay();
+
+        const windowContent = this.root.querySelector(".window-content");
+
+if (windowContent) {
+
+    windowContent.addEventListener("scroll", () => {
+
+        if (!this.overlay?.classList.contains("open")) return;
+
+        this.overlay.style.top = `${windowContent.scrollTop}px`;
+
+    });
+
+}
+
     }
 
     destroy() {
@@ -39,7 +54,7 @@ class DrawerManager {
 
         const actions = this.root.querySelector(".dh-mobile-actions");
 
-actions.appendChild(this.button);
+        actions.appendChild(this.button);
 
         this.button.addEventListener("click", (event) => {
             event.preventDefault();
@@ -75,8 +90,16 @@ actions.appendChild(this.button);
 
         if (!sidebar || !this.overlay) return;
 
-        this.overlay.classList.add("open");
-        sidebar.classList.add("open");
+   const windowContent = this.root.querySelector(".window-content");
+
+if (windowContent) {
+
+    this.overlay.style.top = `${windowContent.scrollTop}px`;
+
+}
+
+this.overlay.classList.add("open");
+sidebar.classList.add("open");
     }
 
     close() {
@@ -86,6 +109,7 @@ actions.appendChild(this.button);
 
         sidebar.classList.remove("open");
         this.overlay.classList.remove("open");
+        this.overlay.style.top = "";
     }
 }
 

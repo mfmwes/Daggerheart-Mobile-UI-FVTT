@@ -5,4 +5,5 @@ Hooks.once("ready", () => {
         MobileSheet.initialize(app);
     });
 });
+;
 
