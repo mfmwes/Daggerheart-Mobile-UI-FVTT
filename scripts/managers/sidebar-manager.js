@@ -16,11 +16,11 @@ class SidebarManager {
 
     }
 
-    initialize() {
+   initialize() {
 
     this.cache();
 
-    if (!this.sidebarContent) return;
+   if (!this.sidebarContent) return;
 
     this.destroy();
 
@@ -29,13 +29,13 @@ class SidebarManager {
 
 }
 
-    cache() {
+  cache() {
 
-        this.windowApp = this.root.closest(".window-app") ?? this.root;
+    this.windowApp = this.root.closest(".window-app") ?? this.root;
 
-        this.sidebarContent = document.querySelector("#sidebar-content");
+    this.sidebarContent = document.querySelector("#sidebar-content");
 
-    }
+}
 
     destroy() {
 
@@ -82,7 +82,7 @@ actions.appendChild(this.button);
 
 }
 
-    createOverlay() {
+  createOverlay() {
 
     this.overlay = document.createElement("div");
     this.overlay.className = "dh-sidebar-overlay";
@@ -115,49 +115,41 @@ actions.appendChild(this.button);
 
 }
 
-    open(panelId = "chat") {
+open(panelId = "chat") {
 
-        if (this.currentPanel) return;
+    if (this.currentPanel) return;
 
-        const panel = document.getElementById(panelId);
+    const panel = document.getElementById(panelId);
 
-        if (!panel) return;
-        if (!this.overlayContent) return;
+    if (!panel) return;
 
-        this.currentPanel = panel;
-        this.currentParent = panel.parentNode;
-        this.currentNextSibling = panel.nextSibling;
+    this.currentPanel = panel;
+    this.currentParent = panel.parentNode;
+    this.currentNextSibling = panel.nextSibling;
 
-        this.overlayContent.appendChild(panel);
+    this.overlayContent.appendChild(panel);
 
-        this.overlay.classList.add("open");
+    this.overlay.classList.add("open");
 
+}
+
+   close() {
+
+    if (!this.currentPanel) return;
+
+    if (this.currentNextSibling) {
+        this.currentParent.insertBefore(this.currentPanel, this.currentNextSibling);
+    } else {
+        this.currentParent.appendChild(this.currentPanel);
     }
 
-    close() {
+    this.overlay.classList.remove("open");
 
-        if (!this.currentPanel) return;
+    this.currentPanel = null;
+    this.currentParent = null;
+    this.currentNextSibling = null;
 
-        if (this.currentNextSibling) {
-
-            this.currentParent.insertBefore(
-                this.currentPanel,
-                this.currentNextSibling
-            );
-
-        } else {
-
-            this.currentParent.appendChild(this.currentPanel);
-
-        }
-
-        this.overlay.classList.remove("open");
-
-        this.currentPanel = null;
-        this.currentParent = null;
-        this.currentNextSibling = null;
-
-    }
+}
 
     toggle(panelId = "chat") {
 
