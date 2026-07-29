@@ -2,8 +2,10 @@
   "id": "daggerheart-mobile-ui",
   "title": "Daggerheart Mobile UI",
   "description": "Mobile interface for Daggerheart on Foundry VTT.",
-  "version": "0.1.0",
-
+  "version": "0.0.1",
+  "manifest": "https://raw.githubusercontent.com/mfmwes/Daggerheart-Mobile-UI-FVTT/main/module.json",
+  "download": "https://github.com/mfmwes/Daggerheart-Mobile-UI-FVTT/releases/download/v0.0.1/daggerheart-mobile-ui.zip",
+  
   "authors": [
     {
       "name": "Wesley Militão"
@@ -44,7 +46,6 @@
     "styles/tabs.css",
     "styles/collapse.css",
     "styles/drawer.css",
-"styles/sidebar-manager.css"
-
+    "styles/sidebar-manager.css"
   ]
 }
