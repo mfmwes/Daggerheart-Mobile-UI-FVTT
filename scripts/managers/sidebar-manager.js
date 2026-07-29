@@ -87,6 +87,9 @@ actions.appendChild(this.button);
     this.overlay = document.createElement("div");
     this.overlay.className = "dh-sidebar-overlay";
 
+    const panel = document.createElement("div");
+    panel.className = "dh-sidebar-overlay-content";
+
     const header = document.createElement("div");
     header.className = "dh-sidebar-header";
 
@@ -98,23 +101,24 @@ actions.appendChild(this.button);
     closeButton.className = "dh-sidebar-close";
     closeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 
-    closeButton.addEventListener("click", () => {
-        this.close();
-    });
-
-    this.overlayContent = document.createElement("div");
-    this.overlayContent.className = "dh-sidebar-overlay-content";
+    closeButton.addEventListener("click", () => this.close());
 
     header.appendChild(title);
     header.appendChild(closeButton);
 
-    this.overlay.appendChild(header);
-    this.overlay.appendChild(this.overlayContent);
+    const content = document.createElement("div");
+    content.className = "dh-sidebar-content";
+
+    panel.appendChild(header);
+    panel.appendChild(content);
+
+    this.overlay.appendChild(panel);
 
     this.windowApp.appendChild(this.overlay);
 
-}
+    this.overlayContent = content;
 
+}
 open(panelId = "chat") {
 
     if (this.currentPanel) return;
