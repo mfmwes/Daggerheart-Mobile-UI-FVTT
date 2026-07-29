@@ -99,4 +99,60 @@
     position: static !important;
 
 }
-;
+
+/* ======================================================
+   Sidebar Header
+====================================================== */
+
+.dh-sidebar-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 14px;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    background: #201b3d;
+
+    color: #f3d28b;
+
+    font-weight: 600;
+
+}
+
+.dh-sidebar-close {
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: inherit;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+.dh-sidebar-close:hover {
+
+    opacity: .8;
+
+}
+
+.dh-sidebar-overlay-content {
+
+    flex: 1;
+
+    overflow: hidden;
+
+}
