@@ -88,9 +88,15 @@
 
 }
 
+/* .dh-mobile .tab {
+    padding-bottom: 64px;
+} */
+
+
 .dh-drawer-button,
 .dh-sidebar-button {
 
     position: static !important;
 
 }
+;

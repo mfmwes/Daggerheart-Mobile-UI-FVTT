@@ -39,13 +39,21 @@ class SidebarManager {
 
     destroy() {
 
+    // Se o chat estiver aberto, devolve ele para o Foundry
+    if (this.currentPanel) {
+        this.close();
+    }
+
     this.windowApp
-        .querySelector(".dh-sidebar-button")
+        ?.querySelector(".dh-sidebar-button")
         ?.remove();
 
     this.windowApp
-        .querySelector(".dh-sidebar-overlay")
+        ?.querySelector(".dh-sidebar-overlay")
         ?.remove();
+
+    this.overlay = null;
+    this.overlayContent = null;
 
 }
 
@@ -95,6 +103,7 @@ actions.appendChild(this.button);
         const panel = document.getElementById(panelId);
 
         if (!panel) return;
+        if (!this.overlayContent) return;
 
         this.currentPanel = panel;
         this.currentParent = panel.parentNode;
