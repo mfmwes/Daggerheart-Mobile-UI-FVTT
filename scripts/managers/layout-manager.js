@@ -3,8 +3,20 @@ class LayoutManager {
         this.root = root;
     }
 
+    createActionBar() {
+
+    if (this.root.querySelector(".dh-mobile-actions")) return;
+
+    const actions = document.createElement("div");
+    actions.className = "dh-mobile-actions";
+
+    this.root.appendChild(actions);
+
+}
+
     initialize() {
         this.cache();
+        this.createActionBar();
     }
 
     cache() {

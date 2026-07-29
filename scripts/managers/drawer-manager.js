@@ -33,9 +33,13 @@ class DrawerManager {
         this.button = document.createElement("button");
         this.button.className = "dh-drawer-button";
         this.button.type = "button";
-        this.button.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        this.button.innerHTML = `
+    <i class="fa-solid fa-bars"></i>
+`;
 
-        this.windowApp.appendChild(this.button);
+        const actions = this.root.querySelector(".dh-mobile-actions");
+
+actions.appendChild(this.button);
 
         this.button.addEventListener("click", (event) => {
             event.preventDefault();

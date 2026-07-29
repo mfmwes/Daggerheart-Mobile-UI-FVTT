@@ -59,7 +59,9 @@ createButton() {
     this.button.innerHTML =
         '<i class="fa-solid fa-comments"></i>';
 
-    this.windowApp.appendChild(this.button);
+    const actions = this.root.querySelector(".dh-mobile-actions");
+
+actions.appendChild(this.button);
 
     this.button.addEventListener("click", (event) => {
 

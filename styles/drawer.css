@@ -54,41 +54,7 @@
 }
 
 .dh-mobile .dh-drawer-button {
-    position: absolute;
 
-    right: -20px;
-    bottom: 28px;
+    position: static;
 
-    width: 56px;
-    height: 56px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 3px solid var(--dh-background, #141414);
-    border-radius: 50%;
-
-    background: #3a2b1a;
-    color: #f0d28a;
-
-    font-size: 22px;
-
-    cursor: pointer;
-
-    box-shadow: 0 4px 14px rgba(0,0,0,.45);
-
-    z-index: 3002;
-
-    transition:
-        transform .15s ease,
-        background .15s ease;
-}
-
-.dh-mobile .dh-drawer-button:hover {
-    transform: scale(1.05);
-}
-
-.dh-mobile .dh-drawer-button:active {
-    transform: scale(.95);
 }

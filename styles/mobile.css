@@ -6,3 +6,91 @@
 @import "accordion.css";
 @import "sidebar-manager.css";
 @import "sidebar-overlay.css";
+
+/* ======================================================
+   Mobile Action Bar
+====================================================== */
+
+.dh-mobile-actions {
+
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+
+    display: flex;
+    gap: 4px;
+
+    z-index: 100;
+
+}
+
+/* ======================================================
+   Mobile Buttons
+====================================================== */
+
+.dh-mobile-actions button {
+
+    flex: 1;
+
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 0 10px;
+
+    border: 1px solid #5b4722;
+    border-radius: 2px;
+
+    background: #f2c766;
+
+    color: #3b2b16;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+.dh-mobile-actions button i {
+
+    font-size: 15px;
+
+}
+
+.dh-mobile-actions button span {
+
+    font-size: 14px;
+
+}
+
+.dh-mobile-actions button:hover {
+
+    filter: brightness(1.05);
+
+}
+
+.dh-mobile-actions button i {
+
+    font-size: 14px;
+
+}
+
+.dh-mobile-actions button span {
+
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+.dh-drawer-button,
+.dh-sidebar-button {
+
+    position: static !important;
+
+}
