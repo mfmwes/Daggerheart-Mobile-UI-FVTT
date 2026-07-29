@@ -18,7 +18,7 @@
   "relationships": {
     "systems": [
       {
-        "id": "daggerheart",
+        "id": "daggerheart-mobile-ui",
         "type": "system"
       }
     ]
