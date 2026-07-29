@@ -1,0 +1,12 @@
+.dh-mobile .equipment-section > .title,
+.dh-mobile .loadout-section > .title,
+.dh-mobile .experience-section > .title {
+    cursor: pointer;
+    user-select: none;
+}
+
+.dh-mobile .equipment-section.collapsed > .items-sidebar-list,
+.dh-mobile .loadout-section.collapsed > .items-sidebar-list,
+.dh-mobile .experience-section.collapsed > .experience-list {
+    display: none;
+}

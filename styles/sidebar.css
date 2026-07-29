@@ -1,0 +1,165 @@
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.dh-mobile .character-sidebar-sheet{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+    padding:12px;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ==========================================================
+   PORTRAIT
+========================================================== */
+
+.dh-mobile .character-sidebar-sheet .portrait{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.dh-mobile .character-sidebar-sheet .portrait img{
+
+    width:100%;
+    max-width:260px;
+
+    height:auto;
+
+    border-radius:12px;
+
+    object-fit:cover;
+
+}
+
+
+/* ==========================================================
+   INFO
+========================================================== */
+
+.dh-mobile .character-sidebar-sheet .info-section{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+/* ==========================================================
+   HP / STRESS
+========================================================== */
+
+.dh-mobile .resources-section{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.dh-mobile .status-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+}
+
+
+/* ==========================================================
+   THRESHOLD
+========================================================== */
+
+.dh-mobile .threshold-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+
+/* ==========================================================
+   SHORTCUTS
+========================================================== */
+
+.dh-mobile .shortcut-items-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    overflow:visible;
+
+}
+
+
+/* ==========================================================
+   EQUIPMENT
+========================================================== */
+
+.dh-mobile .equipment-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+/* ==========================================================
+   LOADOUT
+========================================================== */
+
+.dh-mobile .loadout-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE
+========================================================== */
+
+.dh-mobile .experience-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}

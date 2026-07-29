@@ -1,0 +1,80 @@
+.dh-sidebar-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    background: rgba(0,0,0,.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: opacity .25s ease;
+
+    z-index: 9999;
+
+}
+
+.dh-sidebar-overlay.open {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.dh-sidebar-overlay-content {
+
+    width: min(100vw, 420px);
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background: var(--dh-background, #141414);
+
+    transform: translateX(100%);
+
+    transition: transform .25s ease;
+
+}
+
+.dh-sidebar-overlay.open .dh-sidebar-overlay-content {
+
+    transform: translateX(0);
+
+}
+
+.dh-sidebar-button {
+
+    position: absolute;
+
+    top: 8px;
+    right: 52px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    z-index: 100;
+
+}
+
+.dh-sidebar-button i {
+
+    pointer-events: none;
+
+}

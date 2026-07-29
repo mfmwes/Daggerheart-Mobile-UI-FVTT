@@ -1,0 +1,227 @@
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.dh-mobile .character-header-sheet {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 10px 12px;
+
+}
+
+
+/* ==========================================================
+   NAME ROW
+========================================================== */
+
+.dh-mobile .character-header-sheet .name-row {
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.dh-mobile .character-header-sheet .actor-name {
+
+    min-width: 0;
+
+}
+
+.dh-mobile .character-header-sheet .actor-name input,
+.dh-mobile .character-header-sheet .actor-name h1 {
+
+    width: 100%;
+
+    margin: 0;
+
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    line-height: 1.1;
+
+}
+
+.dh-mobile .character-header-sheet .level-div {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 60px;
+
+}
+
+
+/* ==========================================================
+   CHARACTER DETAILS
+========================================================== */
+
+.dh-mobile .character-header-sheet .character-details {
+
+    width: 100%;
+
+}
+
+.dh-mobile .character-header-sheet .character-details > div {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px 8px;
+
+    text-align: center;
+
+}
+
+.dh-mobile .character-header-sheet .character-details span {
+
+    white-space: nowrap;
+
+}
+
+.dh-mobile .character-header-sheet .character-details .dot {
+
+    opacity: .5;
+
+}
+
+
+/* ==========================================================
+   CHARACTER ROW
+========================================================== */
+
+.dh-mobile .character-header-sheet .character-row {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+}
+
+
+/* ==========================================================
+   RESOURCE
+========================================================== */
+
+.dh-mobile .character-header-sheet .resource-section {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   DOMAINS
+========================================================== */
+
+.dh-mobile .character-header-sheet .domains-section {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   DOWNTIME
+========================================================== */
+
+.dh-mobile .character-header-sheet .downtime-section {
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   CHARACTER TRAITS
+========================================================== */
+
+.dh-mobile .character-header-sheet .character-traits {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 4px;
+
+    width: 100%;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media (max-width: 480px) {
+
+    .dh-mobile .character-header-sheet {
+
+        gap: 8px;
+        padding: 8px 10px;
+
+    }
+
+    .dh-mobile .character-header-sheet .name-row {
+
+        gap: 6px;
+
+    }
+
+    .dh-mobile .character-header-sheet .character-traits {
+
+        gap: 2px;
+
+    }
+
+}
+
+/* ==========================================================
+   COMPACT TRAITS (Mobile)
+========================================================== */
+
+.dh-mobile .character-header-sheet .character-traits .trait {
+    gap: 2px;
+}
+
+.dh-mobile .character-header-sheet .character-traits .trait-name {
+    font-size: 0.75rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.dh-mobile .character-header-sheet .character-traits .trait-value-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.dh-mobile .character-header-sheet .character-traits .trait-value-area svg {
+    width: 44px !important;
+    height: 40px !important;
+}
+
+.dh-mobile .character-header-sheet .character-traits .trait-value {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.dh-mobile .character-header-sheet .character-traits .spellcasting-mark {
+    transform: scale(.85);
+    transform-origin: center;
+}

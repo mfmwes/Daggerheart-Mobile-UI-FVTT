@@ -1,0 +1,75 @@
+
+
+/* ==========================================================
+   TAB NAVIGATION
+========================================================== */
+
+.dh-mobile .tab-navigation {
+
+    display: flex;
+
+    gap: 6px;
+
+    overflow-x: auto;
+
+    padding: 8px 12px;
+
+    scroll-snap-type: x proximity;
+
+}
+
+.dh-mobile .tab-navigation button {
+
+    flex: 0 0 auto;
+
+    min-width: fit-content;
+
+    padding: 8px 14px;
+
+    scroll-snap-align: center;
+
+}
+/* ==========================================================
+   TAB BUTTONS
+========================================================== */
+
+.dh-mobile .tab-navigation button {
+
+    flex: 1;
+
+    min-width: 110px;
+    min-height: 44px;
+
+    padding: 0 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: background .2s ease,
+                color .2s ease;
+
+}
+
+.dh-mobile .tab-navigation button.active {
+
+    font-weight: 600;
+
+}
+
+/* ==========================================================
+   ACTIVE TAB CONTENT
+========================================================== */
+
+.dh-mobile .tab.active {
+
+    padding-bottom: 70px;
+
+}

@@ -1,0 +1,94 @@
+.dh-mobile .character-sidebar-sheet {
+    position: absolute !important;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: min(90vw, 380px);
+    max-width: 380px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    z-index: 3001;
+
+    transform: translateX(-100%);
+    transition: transform .25s ease;
+
+    background: var(--dh-background, #141414);
+
+    box-shadow: 0 0 40px rgba(0,0,0,.5);
+
+    pointer-events: auto;
+
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dh-mobile .character-sidebar-sheet.open {
+    transform: translateX(0);
+}
+
+.dh-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .25s ease;
+
+    z-index: 3000;
+
+    pointer-events: none;
+}
+
+.dh-overlay.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.dh-mobile .dh-drawer-button {
+    position: absolute;
+
+    right: -20px;
+    bottom: 28px;
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid var(--dh-background, #141414);
+    border-radius: 50%;
+
+    background: #3a2b1a;
+    color: #f0d28a;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,.45);
+
+    z-index: 3002;
+
+    transition:
+        transform .15s ease,
+        background .15s ease;
+}
+
+.dh-mobile .dh-drawer-button:hover {
+    transform: scale(1.05);
+}
+
+.dh-mobile .dh-drawer-button:active {
+    transform: scale(.95);
+}

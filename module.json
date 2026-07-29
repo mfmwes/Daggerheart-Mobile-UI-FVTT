@@ -1,0 +1,50 @@
+{
+  "id": "daggerheart-mobile-ui",
+  "title": "Daggerheart Mobile UI",
+  "description": "Mobile interface for Daggerheart on Foundry VTT.",
+  "version": "0.1.0",
+
+  "authors": [
+    {
+      "name": "Wesley Militão"
+    }
+  ],
+
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+
+  "relationships": {
+    "systems": [
+      {
+        "id": "daggerheart",
+        "type": "system"
+      }
+    ]
+  },
+
+  "esmodules": [
+    "scripts/mobile.js",
+    "scripts/utils.js",
+    "scripts/managers/layout-manager.js",
+    "scripts/managers/collapse-manager.js",
+    "scripts/managers/drawer-manager.js",
+    "scripts/managers/touch-manager.js",
+    "scripts/managers/sidebar-manager.js",
+    "scripts/sheet.js"
+  ],
+
+  "styles": [
+    "styles/mobile.css",
+    "styles/layout.css",
+    "styles/header.css",
+    "styles/sidebar.css",
+    "styles/cards.css",
+    "styles/tabs.css",
+    "styles/collapse.css",
+    "styles/drawer.css",
+"styles/sidebar-manager.css"
+
+  ]
+}

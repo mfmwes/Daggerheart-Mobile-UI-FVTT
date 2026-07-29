@@ -1,0 +1,121 @@
+/* ==========================================================
+   CARDS
+========================================================== */
+
+/* ----------------------------------------------------------
+   Sections
+---------------------------------------------------------- */
+
+.dh-mobile .equipment-section,
+.dh-mobile .loadout-section,
+.dh-mobile .experience-section {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.dh-mobile .equipment-section > .title,
+.dh-mobile .loadout-section > .title,
+.dh-mobile .experience-section > .title {
+
+    margin-bottom: 4px;
+
+}
+
+
+/* ----------------------------------------------------------
+   Lists
+---------------------------------------------------------- */
+
+.dh-mobile .items-sidebar-list,
+.dh-mobile .experience-list {
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+}
+
+
+/* ----------------------------------------------------------
+   Inventory Item
+---------------------------------------------------------- */
+
+.dh-mobile .inventory-item {
+
+    padding: 8px 0;
+    min-height: 56px;
+
+}
+
+
+/* ----------------------------------------------------------
+   Portrait
+---------------------------------------------------------- */
+
+.dh-mobile .inventory-item .img-portait {
+
+    width: 42px;
+    height: 42px;
+
+}
+
+.dh-mobile .inventory-item .item-img {
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: cover;
+
+}
+
+
+/* ----------------------------------------------------------
+   Text
+---------------------------------------------------------- */
+
+.dh-mobile .inventory-item .item-name {
+
+    font-size: .95rem;
+
+}
+
+.dh-mobile .inventory-item .label {
+
+    font-size: .75rem;
+
+}
+
+
+/* ----------------------------------------------------------
+   Controls
+---------------------------------------------------------- */
+
+.dh-mobile .inventory-item .controls a,
+.dh-mobile .experience-row .controls a {
+
+    width: 36px;
+    height: 36px;
+
+}
+
+
+/* ----------------------------------------------------------
+   Experience
+---------------------------------------------------------- */
+
+.dh-mobile .experience-row {
+
+    padding: 6px 0;
+
+}
+
+.dh-mobile .experience-name {
+
+    font-size: .9rem;
+
+}
